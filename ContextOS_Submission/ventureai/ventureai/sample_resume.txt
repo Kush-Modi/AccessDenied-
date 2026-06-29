@@ -1,0 +1,26 @@
+Ananya Sharma
+Email: ananya.sharma@example.com
+Phone: +1-555-0199
+Location: San Francisco, CA
+
+PROFESSIONAL SUMMARY
+Dynamic Software Engineer with over 4 years of experience building scalable web applications. Expert in React, Next.js, Node.js, and Python. Proven track record of improving application performance and implementing modern designs.
+
+EXPERIENCE
+Software Engineer | TechCorp Inc.
+2022 - Present | San Francisco, CA
+- Spearheaded development of modern dashboard using React and TailwindCSS.
+- Optimized database queries to improve backend API response times by 30%.
+- Integrated third-party APIs including Stripe and Affinda.
+
+Junior Developer | WebSolutions LLC
+2020 - 2022 | Austin, TX
+- Developed and maintained custom client websites.
+- Wrote clean, well-tested Python and JavaScript code.
+
+EDUCATION
+B.S. in Computer Science | University of California, Berkeley
+GPA: 3.8/4.0 | 2016 - 2020
+
+SKILLS
+React, Next.js, Node.js, Python, JavaScript, TypeScript, TailwindCSS, AWS, Docker, Git, PostgreSQL

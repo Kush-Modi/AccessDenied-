@@ -1,0 +1,26 @@
+# Caching Configuration
+cache:
+  ttl_seconds: 300
+  hitl_ttl_seconds: 600
+
+# Retrieval Configuration
+retrieval:
+  top_k: 5
+  similarity_threshold: 0.75
+
+# Vector Search Weights (pgvector hybrid signal scoring)
+weights:
+  semantic_similarity: 0.40
+  business_signals: 0.20
+  client_health: 0.15
+  placement_history: 0.10
+  recency: 0.10
+  importance: 0.05
+
+# Decision Intelligence Score Model Weights
+decision_weights:
+  candidate_fit: 0.35
+  knowledge_rag: 0.25
+  planner_memory: 0.20
+  client_health: 0.10
+  priority_urgency: 0.10

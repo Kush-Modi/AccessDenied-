@@ -1,0 +1,108 @@
+rules:
+  - id: "RULE_CLIENT_HEALTH_LOW"
+    name: "Low Client Health"
+    description: "Client health is below 40%, indicating poor engagement or high risk. Decrease confidence."
+    condition: "client_health < 40"
+    action: "decrease_confidence"
+    weight: 0.15
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_RECENT_REJECTION"
+    name: "Recently Rejected"
+    description: "Candidate was rejected recently. Block or suppress recommendation."
+    condition: "candidate_rejected_recently"
+    action: "block"
+    weight: 1.0
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_ALREADY_SUBMITTED"
+    name: "Already Submitted"
+    description: "Candidate has already been submitted to this client/job. Suppress recommendation."
+    condition: "candidate_already_submitted"
+    action: "suppress"
+    weight: 1.0
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_HIRING_FREEZE"
+    name: "Hiring Freeze"
+    description: "Client company is undergoing a hiring freeze. Block recommendation."
+    condition: "hiring_freeze"
+    action: "block"
+    weight: 1.0
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_HIGH_PRIORITY_CLIENT"
+    name: "High Priority Client"
+    description: "Client is high priority. Increase confidence."
+    condition: "high_priority_client"
+    action: "increase_confidence"
+    weight: 0.10
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_NOTICE_PERIOD_LONG"
+    name: "Long Notice Period"
+    description: "Candidate notice period is over 60 days. Decrease confidence."
+    condition: "candidate_notice_period_long"
+    action: "decrease_confidence"
+    weight: 0.10
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_UNAVAILABLE"
+    name: "Candidate Unavailable"
+    description: "Candidate is not available or has already been placed. Block recommendation."
+    condition: "candidate_unavailable"
+    action: "block"
+    weight: 1.0
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_URGENT_HIRING"
+    name: "Urgent Hiring Needed"
+    description: "Job is marked as critical or urgent. Escalate or increase confidence."
+    condition: "urgent_hiring"
+    action: "increase_confidence"
+    weight: 0.10
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_DUPLICATE_REC"
+    name: "Duplicate Recommendation"
+    description: "This candidate-job recommendation was already processed. Suppress or block."
+    condition: "duplicate_recommendation"
+    action: "suppress"
+    weight: 0.50
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_SALARY_MISMATCH"
+    name: "Salary Mismatch"
+    description: "Candidate expectations exceed job maximum budget. Decrease confidence."
+    condition: "salary_mismatch"
+    action: "decrease_confidence"
+    weight: 0.20
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_LOCATION_MISMATCH"
+    name: "Location Mismatch"
+    description: "Candidate location does not match job (not remote). Decrease confidence."
+    condition: "location_mismatch"
+    action: "decrease_confidence"
+    weight: 0.15
+    enabled: true
+    version: "1.0"
+
+  - id: "RULE_MISSING_MANDATORY_SKILLS"
+    name: "Missing Mandatory Skills"
+    description: "Candidate is missing critical required skills for this job role. Decrease confidence."
+    condition: "missing_mandatory_skills"
+    action: "decrease_confidence"
+    weight: 0.25
+    enabled: true
+    version: "1.0"
