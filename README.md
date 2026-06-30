@@ -80,7 +80,8 @@ Ensures strict compliance with experience minimums, salary limits, and cool-off 
 
 ### 1. Recruiter Command Center
 The centralized control panel streams real-time agent execution logs, active pipelines, and pending action queues.
-![Command Center](images/Screenshot 2026-06-27 175301.png)
+<img width="1861" height="870" alt="image" src="https://github.com/user-attachments/assets/e48f28ae-b1b8-4bd2-893f-52dae548562d" />
+
 
 ### 2. Candidate Sourcing & Pipeline
 Recruiters review matched talent pipelines, search using skill filters, and trigger agent evaluations.
@@ -88,7 +89,7 @@ Recruiters review matched talent pipelines, search using skill filters, and trig
 
 ### 3. Interactive Resume Parser & Coordinate Overlay
 ContextOS overlays color-coded bounding boxes directly on top of parsed document layouts, pinpointing the location of extracted fields.
-![Resume Coordinate Highlights](images/image-2.png)
+<img width="928" height="767" alt="image" src="https://github.com/user-attachments/assets/65cb38d5-1fe7-45ff-b225-722c5d2fa252" />
 
 ### 4. Human-In-The-Loop (HITL) Decision Queue
 Displays detailed matching justifications, confidence scores, and business rule traces awaiting recruiter approval.
@@ -116,7 +117,7 @@ Explains candidate score components, history matches, and CRM updates.
 
 ### 10. Planner Task Formulator View
 Visualizes tasks formulated by the Planner Agent.
-![Planner View](images/73886ba9-6196-4d43-948d-d89f3b67b1db.png)
+<img width="1857" height="887" alt="image" src="https://github.com/user-attachments/assets/9b4a4f50-d12b-4c7b-b9f0-96c36cacc167" />
 
 ### 11. Recruiter Recommendation Action Panel
 Interface displaying Next Best Actions (NBAs) and pitcher modules.
